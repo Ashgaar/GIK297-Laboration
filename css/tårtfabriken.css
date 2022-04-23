@@ -1,0 +1,249 @@
+html{
+    background: url("../img/small.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.form__fieldset{
+    border: 0.2rem solid;
+    margin: 0.5rem .5rem;
+    background-color: white;
+}
+
+.form{
+    display: flex;
+    margin: 0rem auto;
+    width: 280px;
+}
+
+.form__name{
+    border: 0.2rem solid;
+    background-color: white;
+}
+
+.form__mandatory{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1.5rem;
+}
+
+.form__cakeTypeSelect{
+    display: flex;
+    margin: 0.25rem auto;
+    margin-top: 0.5rem;
+}
+
+.cakecreator {
+    margin: 0px 0.3rem;
+    padding: 0.1rem 0.3rem;
+}
+
+.header{
+    background: white;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.header__title {
+    display: flex;
+    justify-content: center;
+}
+
+.form__buttonsGroup{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px auto;
+    width: 250px;
+}
+
+.form__buttons{
+    margin: 0rem 0.15rem;
+}
+
+.form__loginLink{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0rem;
+}
+
+.form__personalInput{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: 0px auto;
+    flex-direction: column;
+}
+
+.form__personalInputField{
+    padding: 0.5rem 0rem;
+    margin: 0px auto;
+}
+
+.form__toppingsInput{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0.5rem 0rem;
+   
+}
+
+.form__extraInformation {
+    display: flex;
+    margin: 0rem auto;
+    flex-direction: column;
+    width: 200px;
+} 
+
+.form__cakeType{
+    display: flex;
+    margin-top: 0.5rem;
+    flex-direction: column;
+}
+
+.form__cakeFlavour{
+    margin-top: 0.5rem;
+}
+
+.form__cakeFlavourRadioButtons{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0rem 0.5rem 1rem;
+}
+
+.form__innerTitle{
+    margin-left: 1rem;
+}
+
+.form__toppingsInputCheckbox{
+    margin: 0.25rem 0rem;
+}
+
+@media (min-width: 576px) {
+    html{
+        background: url("../img/mediumsmall.jpg")no-repeat center center fixed;
+    }
+
+    .form{
+        width: 560px;
+    }
+
+    .form__personalInput{
+        flex-direction: row;
+    }
+
+    .form__buttonsGroup{
+        display: flex;
+        flex-direction: row;
+        height: 4rem;
+        width: 98%;
+        justify-content: flex-end;
+    }
+
+    .form__cakeType{
+        flex-direction: row;
+    }
+
+    .form__cakeFlavourRadioButtons{
+        flex-direction: row;
+    }
+
+    .form__extraInformation{
+        width: 100%;
+    }
+
+    .form__toppingsInput{
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 768px) {
+    html{
+        background: url("../img/medium.jpg")no-repeat center center fixed;
+    }
+
+    .form__chooseCake{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .form__toppingsInput{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0rem 5rem;
+    }
+
+    .form{
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    html{
+        background: url("../img/mediumlarge.jpg")no-repeat center center fixed;
+    }
+
+    .toppingsInput{
+        margin: 0.5rem 0rem;
+    }
+
+    .form__chooseCake{
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+
+    .form__cakeType{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .form__innerTitle{
+        display: flex;
+        justify-content: center;
+    }
+
+    .form__groupInner{
+        display: flex;
+    }
+
+    .form{
+        width: 980px;
+    }
+
+    .form__cakeFlavourRadioButtons{
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1200px) {
+    html{
+        background: url("../img/large.jpg")no-repeat center center fixed;
+    }
+
+    .form__group{
+        display: flex;
+    }
+
+    .form__personalInput{
+        flex-direction: column;
+    }
+
+    .form__groupInner{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form__chooseCake{
+        margin-top: 0rem;
+    }
+
+    .form{
+        width: 1150px;
+    }
+}

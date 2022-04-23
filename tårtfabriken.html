@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tårtfabriken</title>
+    <meta name="description" content="En webbsida designad av Mikael Olsson.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="./hda_logotype.ico"> Ändra gärn till en tårt ikon eller något. -->
+    <link rel="stylesheet" href="./css/tårtfabriken.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">Tårtfabriken</h1>
+    </header>
+
+    <form class="form">
+        <fieldset class="form__fieldset">
+            <legend class="form__name">
+                <h2>Skapa och beställ din tårta</h2>
+            </legend>
+            <p class="form__mandatory">* = Obligatoriska fält</p>
+
+            <div class="form__group">
+                <div class="form__groupInner">
+                    <fieldset class="form__fieldset">
+                        <legend class="form__name">
+                            <h3>Typ av tårta</h3>
+                        </legend>
+                        <div class="form__chooseCake">
+                            <div class="form__cakeType">
+                                <label class="form__innerTitle" for="cakeType">Vilken typ av tårta
+                                    vill du ha? *
+                                </label>
+                                <div>
+                                    <select class="form__cakeTypeSelect" name="cakeType" id="cakeType" required>
+                                        <option value="">Välj här</option>
+                                        <optgroup label="Vanliga tårtor">
+                                            <option value="spongeCake">Sockerkakstårta</option>
+                                            <option value="wedding_cake">Bröllopstårta</option>
+                                        </optgroup>
+                                        <optgroup label="Speciella tårtor">
+                                            <option value="meringue_cake">Marängtårta</option>
+                                            <option value="pancake_cake">Pannkakstårta</option>
+                                            <option value="ice_cream_cake">Glasstårta</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form__cakeFlavour">
+                                <label class="form__innerTitle">Vilken smak vill du ha på basen av tårtan? *</label>
+                                <div class="form__cakeFlavourRadioButtons">
+                                    <label><input type="radio" name="flavour" value="neutral" required>Neutral</label>
+                                    <label><input type="radio" name="flavour" value="vanilla">Vanilj</label>
+                                    <label><input type="radio" name="flavour" value="chocolate">Choklad</label>
+                                    <label><input type="radio" name="flavour" value="lemon">Citron</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset >
+                    <fieldset class="form__fieldset">
+                        <legend class="form__name">
+                            <h3>Toppings</h3>
+                        </legend>
+                        <label class="form__innerTitle">Vad vill du ha på din tårta?<br></label>
+                        <div class="form__toppingsInput">
+                            <div class="form__toppingsInputCheckbox">
+                                <label><input type="checkbox" value="frosting" name="toppings1">Frosting</label>
+                            </div>
+                            <div class="form__toppingsInputCheckbox">
+                                <label><input type="checkbox" value="chocolateFrosting"
+                                        name="toppings2">Chokladfrosting</label>
+                            </div>
+                            <div class="form__toppingsInputCheckbox">
+                                <label><input type="checkbox" value="strawberries" name="toppings3">Jordgubbar</label>
+                            </div>
+                            <div class="form__toppingsInputCheckbox">
+                                <label><input type="checkbox" value="raspberries" name="toppings4">Hallon</label>
+                            </div>
+                            <div class="form__toppingsInputCheckbox">
+                                <label><input type="checkbox" value="whippedCream" name="toppings5">Grädde</label>
+                            </div>
+                            <div class="form__toppingsInputCheckbox">
+                                <label><input type="checkbox" value="apples" name="toppings6">Äpple</label>
+                            </div>
+                            <div class="form__toppingsInputCheckbox">
+                                <label><input type="checkbox" value="banana" name="toppings7">Banan</label>
+                            </div>
+                            <div class="form__toppingsInputCheckbox">
+                                <label><input type="checkbox" value="kiwi" name="toppings8">Kiwi</label>
+                            </div>
+                            <div class="form__toppingsInputCheckbox">
+                                <label><input type="checkbox" value="orange" name="toppings9">Apelsin</label>
+                            </div>
+                            <div class="form__toppingsInputCheckbox">
+                                <label><input type="checkbox" value="roastedNuts" name="toppings10">Rostade
+                                    nötter</label>
+                            </div>
+                        </div>
+                        <div class="form__extraInformation">
+                            <label for="extraInformation">Allergier/önskemål<br></label>
+                            <textarea id="extraInformation" name="extraInformation" cols="30" rows="8"
+                                placeholder="Skriv gärna i om du har några allergier eller andra önskemål."></textarea>
+                        </div>
+                    </fieldset>
+                </div>
+                <fieldset class="form__fieldset">
+                    <legend class="form__name">
+                        <h3>Personlig information</h3>
+                    </legend>
+                    <div class="form__personalInput">
+                        <div class="form__personalInputField">
+                            <label>Förnamn * <br><input type="text" name="personalInfo" placeholder="T.ex. Jonas"
+                                    required></label>
+                        </div>
+                        <div class="form__personalInputField">
+                            <label>Efternamn * <br><input type="text" name="personalInfo" placeholder="T.ex. Jonsson"
+                                    required></label>
+                        </div>
+                        <div class="form__personalInputField">
+                            <label>Beställningsadress * <br><input type="text" name="personalInfo"
+                                    placeholder="T.ex. Ketchupvägen 23" required></label>
+                        </div>
+                        <div class="form__personalInputField">
+                            <label>Email * <br><input type="email" name="personalInfo"
+                                    placeholder="T.ex. tårtfabriken@hotmail.com" required></label>
+                        </div>
+                        <div class="form__personalInputField">
+                            <label>Lösenord * <br><input type="password" name="personalInfo"
+                                    placeholder="••••••••••••••" required></label>
+                        </div>
+                        <a class="form__loginLink" href="http://users.du.se/~h20mikol/t%c3%a5rtfabriken.html">Redan registrerad? Logga in här</a>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="form__buttonsGroup">
+                <input class="form__buttons" type="reset" value="Återställ formuläret">
+                <input class="form__buttons" type="submit" value="Slutför beställning">
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
